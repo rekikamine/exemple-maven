@@ -61,12 +61,7 @@
                         </goals>
                     </execution>
                 </executions>
-      </plugin>
-	    <plugin>
-        <groupId>org.sonarsource.sonarqube</groupId>
-        <artifactId>sonar-plugin-api</artifactId>
-        <version>7.5</version>
-      </plugin>
+    
 	  <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-surefire-plugin</artifactId>
@@ -127,17 +122,6 @@
     </plugin>
     </plugins>
   </build>
-   <profiles>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url> http://localhost:9000 </sonar.host.url>
-            </properties>
-        </profile>
-     </profiles>
+   
 
 </project>
