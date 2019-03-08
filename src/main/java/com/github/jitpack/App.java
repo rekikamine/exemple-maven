@@ -6,12 +6,12 @@ package com.github.jitpack;
  */
 public class App 
 {
-    public static void main(String[] args)
-    {
-        System.out.println(new App().greet("world"));
-    }
+  
 
     public String greet(String name) {
+        return "Hello " + name;
+    }
+	public String greet2(String name) {
         return "Hello " + name;
     }
 }

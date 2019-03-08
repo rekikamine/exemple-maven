@@ -11,13 +11,12 @@ public class AppTest
 
     @Test
     public void testApp()
+	
     {
+		assertTrue( true );
         assertEquals("Hello world", app.greet("world"));
+		assertEquals("Hello world", app.greet2("world"));
+		
     }
-
-    @Test
-    public void testTrue()
-    {
-        assertTrue( true );
-    }
+	
 }
